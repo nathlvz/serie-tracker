@@ -1,0 +1,12 @@
+services:
+  common-catalog-db:
+    image: postgres:15.3
+    restart: always
+    ports:
+      - "9010:5432"
+    volumes:
+      - "./scripts-db/common-catalog-db:/docker-entrypoint-initdb.d"
+    environment:
+      - POSTGRES_PASSWORD=c0NtR4z_3n4
+      - POSTGRES_USER=usradm
+      - POSTGRES_DB=common-catalog-db
