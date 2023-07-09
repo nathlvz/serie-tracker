@@ -1,0 +1,22 @@
+==== Links
+
+[[example_curl_request]]
+== Curl request
+
+include::{snippets}/country_controller_int_test/test_get_countries_paginated_successful/curl-request.adoc[]
+
+[[example_http_request]]
+== HTTP request
+
+include::{snippets}/country_controller_int_test/test_get_countries_paginated_successful/http-request.adoc[]
+
+[[example_http_response]]
+== HTTP response
+
+include::{snippets}/country_controller_int_test/test_get_countries_paginated_successful/http-response.adoc[]
+
+
+[[example_response-fields]]
+== HTTP response fields
+
+include::{snippets}/country_controller_int_test/test_get_countries_paginated_successful/response-fields.adoc[]

@@ -1,0 +1,32 @@
+server:
+  port: 9090
+  servlet:
+    context-path: /common-catalog
+  
+spring:
+#  data:
+#    rest:
+#      page-param-name: pagina
+  profiles:
+    active:
+    - jdbc:jdbctemplate
+#  autoconfigure:
+#    exclude:
+#    - org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration
+  datasource:
+    hikari:
+      username: usradm
+      password: c0NtR4z_3n4
+      jdbc-url: jdbc:postgresql://localhost:9010/common-catalog-db
+      driver-class-name: org.postgresql.Driver
+      maximum-pool-size: 60
+      connection-test-query: SELECT 1 AS TEST    
+
+  h2:
+    console:
+      enabled: true
+      
+      
+logging:
+  level:
+    mx.com.beni.serietracker.commoncatalogservice.repository: INFO
